@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var topic: UILabel!
     @IBOutlet weak var redScore: UILabel!
     @IBOutlet weak var blueScore: UILabel!
@@ -20,18 +20,35 @@ class ViewController: UIViewController {
     var score1 = 0
     var topicList = TopicList().randomTopicList()
     let imageName = TopicList().imageSorter()
+    var playerType = StartingViewController()
+    var text = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         for button in winner {
             button.layer.cornerRadius = 4
         }
+        blueScore.text = "\(gameType()[1]): \(score1)"
+        redScore.text = "\(gameType()[0]): \(score0)"
         newTopic()
+    }
+    
+    func gameType() -> [String] {
+        var arr = [String]()
+        
+        if text == "player" {
+            arr = ["Player 1", "Player 2"]
+        } else if text == "team" {
+            arr = ["Team Red", "Team Blue"]
+        } else {
+            arr = ["", ""]
+        }
+        
+        return arr
     }
     
     func newTopic() {
         let topics = topicList.popLast() ?? ""
-        print(topics)
         topic.text = topics
         
         if imageName[topics] == "car" {
@@ -78,24 +95,24 @@ class ViewController: UIViewController {
             button.isEnabled = false
         }
     }
-
+    
     @IBAction func addScore(_ sender: UIButton) {
         if sender.tag == 0 {
             score0 += 1
-            redScore.text = "Team Red: \(score0)"
+            redScore.text = "\(gameType()[0]): \(score0)"
         } else {
             score1 += 1
-            blueScore.text = "Team Blue \(score1)"
+            blueScore.text = "\(gameType()[1]): \(score1)"
         }
         
         if score1 == 20 {
-            topic.text = "Blue Wins"
+            topic.text = "\(gameType()[1]) Wins"
             pic.backgroundColor = .blue
             pic.image = nil
             topic.textColor = .white
             disableButton()
         } else if score0 == 20 {
-            topic.text = "Red Wins"
+            topic.text = "\(gameType()[0]) Wins"
             pic.backgroundColor = .red
             pic.image = nil
             topic.textColor = .white

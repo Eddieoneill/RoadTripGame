@@ -15,6 +15,7 @@ class TopicList {
     let name = ["Find City name"]
     let sign = ["Find speed sign", "Find direction sign", "Find exit sign"]
     let animals = ["Find any animal"]
+    var tag = 0
     
     func randomTopicList() -> [String] {
         var randomArr = [String]()

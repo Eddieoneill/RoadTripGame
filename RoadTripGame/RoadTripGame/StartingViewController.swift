@@ -24,11 +24,13 @@ class StartingViewController: UIViewController {
         startButton.isEnabled = false
     }
     
-    @IBAction func startGame(_ sender: UIButton) {
-        let vc = ViewController(nibName: "ViewController", bundle: nil)
-
-        vc.text = "\(self.text)"
-        navigationController?.pushViewController(vc, animated: true)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is ViewController
+        {
+            let vc = segue.destination as? ViewController
+            vc?.text = "\(self.text)"
+        }
     }
     
     @IBAction func gameType(_ sender: UIButton) {

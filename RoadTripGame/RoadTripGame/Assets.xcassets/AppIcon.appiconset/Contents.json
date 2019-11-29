@@ -3,109 +3,93 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "roadTripIcon-1.png",
+      "filename" : "appIcon-1.jpg",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "roadTripIcon.png",
+      "filename" : "appIcon.jpg",
       "scale" : "3x"
     },
     {
-      "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "roadTripIcon-2.png",
+      "size" : "29x29",
       "scale" : "2x"
     },
     {
-      "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "roadTripIcon-3.png",
+      "size" : "29x29",
       "scale" : "3x"
     },
     {
-      "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "roadTripIcon-4.png",
+      "size" : "40x40",
       "scale" : "2x"
     },
     {
-      "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "roadTripIcon-5.png",
+      "size" : "40x40",
       "scale" : "3x"
     },
     {
+      "idiom" : "iphone",
       "size" : "60x60",
-      "idiom" : "iphone",
-      "filename" : "roadTripIcon-6.png",
       "scale" : "2x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "roadTripIcon-7.png",
+      "size" : "60x60",
       "scale" : "3x"
     },
     {
+      "idiom" : "ipad",
       "size" : "20x20",
-      "idiom" : "ipad",
-      "filename" : "roadTripIcon-8.png",
       "scale" : "1x"
     },
     {
+      "idiom" : "ipad",
       "size" : "20x20",
-      "idiom" : "ipad",
-      "filename" : "roadTripIcon-9.png",
       "scale" : "2x"
     },
     {
+      "idiom" : "ipad",
       "size" : "29x29",
-      "idiom" : "ipad",
-      "filename" : "roadTripIcon-11.png",
       "scale" : "1x"
     },
     {
+      "idiom" : "ipad",
       "size" : "29x29",
-      "idiom" : "ipad",
-      "filename" : "roadTripIcon-12.png",
       "scale" : "2x"
     },
     {
-      "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "roadTripIcon-10.png",
+      "size" : "40x40",
       "scale" : "1x"
     },
     {
-      "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "roadTripIcon-13.png",
+      "size" : "40x40",
       "scale" : "2x"
     },
     {
-      "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "roadTripIcon-14.png",
+      "size" : "76x76",
       "scale" : "1x"
     },
     {
-      "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "roadTripIcon-15.png",
+      "size" : "76x76",
       "scale" : "2x"
     },
     {
+      "idiom" : "ipad",
       "size" : "83.5x83.5",
-      "idiom" : "ipad",
-      "filename" : "roadTripIcon-16.png",
       "scale" : "2x"
     },
     {
-      "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "roadTripIcon-17.png",
+      "size" : "1024x1024",
       "scale" : "1x"
     }
   ],

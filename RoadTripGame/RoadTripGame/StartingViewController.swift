@@ -37,23 +37,21 @@ class StartingViewController: UIViewController {
         if sender.tag == 0 {
             if checkMark1.image != nil {
                 checkMark1.image = nil
-                button2.isEnabled = true
                 startButton.isEnabled = false
             } else {
                 checkMark1.image = #imageLiteral(resourceName: "check-mark-png")
-                button2.isEnabled = false
+                checkMark2.image = nil
                 text = "player"
                 startButton.isEnabled = true
             }
         } else {
             if checkMark2.image != nil {
                 checkMark2.image = nil
-                button1.isEnabled = true
                 startButton.isEnabled = false
             } else {
                 checkMark2.image = #imageLiteral(resourceName: "check-mark-png")
-                button1.isEnabled = false
                 text = "team"
+                checkMark1.image = nil
                 startButton.isEnabled = true
             }
         }
